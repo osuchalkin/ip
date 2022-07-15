@@ -11,6 +11,7 @@ try:
 
     # Сохранение ответа API в переменной.
     response_dict = r.json()
+    
     # Обработка результатов.
     print(f"[+] Your current IP: {response_dict['ip']}")
     print(f"[+] Your current country: {response_dict['country']}")
@@ -18,4 +19,4 @@ try:
 except requests.exceptions.ConnectionError:
     print(f"[-] Sorry, can not connect to {url}")
 
-input('Press Enter to quit')
+input('Press Enter to quit\n')
